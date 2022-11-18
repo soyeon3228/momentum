@@ -34,6 +34,21 @@
             font-size: 30px;
             font-weight: lighter;
         }
+
+        .btn {
+            position: relative;
+            margin-top:30px;
+            border: none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+
+        }
+
         .author {
             font-size: 25px;
         }
@@ -63,6 +78,7 @@
             align-items: center;
             justify-content: center;
         }
+
     </style>
 
     <script>
@@ -74,12 +90,19 @@
         <div id="time" class="time">00:00</div>
         <div class="gre">가보자 소연</div>
         <div class="todo">내가 가진 모든 것들이 소중해</div>
+        <button class="btn" onclick="music()">MUSIC</button>
     </div>
     <div class="quote">
         <div class="author">네 모습이 그리 맘에 안 들면 그 몸부터 일으켜 봐바</div>
         <div class="content">너의 가능성을 믿어</div>
     </div>
 
+    <audio id="audioContainer">
+        <source id="audioSource" src="https://drive.google.com/uc?export=download&id=1VIHoPySmdFpfRIb1fk8GCIawsh57pXe7"type='audio/mp3'/>   
+    </audio>
+                                                                                             
+
+    
 </body>
 
 </html>
